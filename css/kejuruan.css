@@ -1,0 +1,552 @@
+:root{
+    --primary: #7095F4;
+    --bg: #fff;
+    --f: #333;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+body{
+        
+   background-color: #fff;
+    
+}
+
+
+
+
+/* Navbar */
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2%;
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 520px;
+    z-index: 9999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+
+.navbar .navbar-nav a{
+    color: #000000;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+.navbar .navbar-extra a{
+    color: #070707;
+    margin: 0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover{
+    color: var(--primary);
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+.header{
+    margin-top: 5.2rem;
+    background-color: var(--primary);
+}
+header h1{
+    text-align: center;
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/*Footer*/
+.footer{
+    background-color: var(--primary);
+    color: var(--bg);
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align:center;
+    
+    
+}
+.footer-logo img {
+    height: 35px;
+    width: auto;
+    filter: grayscale(100%); /* Mengubah gambar menjadi abu-abu sepenuhnya */
+}
+
+/*Sosial Media didalam footer */
+
+    
+    .footer .icon{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .icon a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .icon a:hover{
+    color: var(--bg);
+    }
+    
+    .footer .icon ul{
+    width:100%;
+    }
+    
+    .footer .icon ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .icon a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+   
+
+/*Media Queries*/
+
+
+/*Dekstop*/
+@media(max-width: 1444px){
+    html{
+        font-size: 90%;
+    }
+
+    .navbar .teks{
+       padding-right: 24rem;
+    }
+   
+    
+    
+    .header{
+        margin-top: 5.2rem;
+    }
+   
+    .footer-logo img {
+        filter: grayscale(100%);
+        
+    }
+    .judul{
+        margin-top: 15rem;
+        text-align: center;
+    }
+
+    .judul h1{
+        font-size: 40px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box1 {
+        margin-top: 10rem;
+        
+        width: 300px;
+        height: 300px;
+        
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 0.5px 0.5px 2px 2px  #656565;
+
+    }
+    
+    .box1 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        box-shadow: 0.1px 0.1px 0.1px 0.5px  #656565;
+    }
+    
+    .box1 p {
+        
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .box2 {
+        margin-top: 10rem;
+        margin-left: 5rem;
+        width: 300px;
+        height: 300px;
+        
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 0.5px 0.5px 2px 2px  #656565;
+        
+
+    }
+    
+    .box2 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        box-shadow: 0.1px 0.1px 0.1px 0.5px  #656565;
+    }
+    
+    .box2 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .box3 {
+        margin-top: 10rem;
+        margin-left: 5rem;
+        width: 300px;
+        height: 300px;
+        
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 0.5px 0.5px 2px 2px  #656565;
+        
+
+    }
+    
+    .box3 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        box-shadow: 0.1px 0.1px 0.1px 0.5px  #656565;
+    }
+    
+    .box3 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .container2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box4 {
+        margin-top: 10rem;
+        margin-bottom: 20rem;
+        width: 300px;
+        height: 300px;
+        
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 0.5px 0.5px 2px 2px  #656565;
+        
+
+    }
+    
+    .box4 img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        box-shadow: 0.1px 0.1px 0.1px 0.5px  #656565;
+    }
+    
+    .box4 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .box5 {
+        margin-top: 10rem;
+        margin-bottom: 20rem;
+        margin-left: 5rem;
+        
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 5%;
+        box-shadow: 0.5px 0.5px 2px 2px  #656565;
+        
+
+    }
+    
+    .box5 img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 10px;
+        box-shadow: 0.1px 0.1px 0.1px 0.5px  #656565;
+    }
+    
+    .box5 p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /*Footer*/
+
+    .alamat p{
+        text-align: center;
+        margin-right: 1rem;  
+    }
+
+}
+
+
+/*Tablet*/
+@media(max-width: 991px){
+    html{
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .navbar .teks{
+        padding-right: 31rem;
+        font-size: 140%;
+    }
+   
+
+    
+    
+    
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 20rem;
+        height: 100vh;
+        transition: 0.3s;
+        border-top: 1px solid #8686861f;
+        border-left: 1px solid #8686861f;
+    }
+
+   
+
+    .navbar .navbar-nav a{
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
+    .header{
+        margin-top: 6.5em;
+    }
+
+    .judul h1{
+        font-size: 25px;
+    }
+    .footer-logo img {
+        filter: grayscale(100%);
+        
+    }
+
+    .box1, .box2, .box3, .box4, .box5  {
+        width: 150px;
+        height: 200px;
+    }
+
+    .box1 img, .box2 img, .box3 img, .box4 img, .box5 img {
+        width: 100px;
+        height: 100px;
+    }
+
+       
+    .box1 p, .box2 p, .box3 p, .box4 p, .box5 p {
+        font-size: 10px;
+    }
+    
+}
+
+
+
+/*Mobile Phone*/
+@media(max-width: 760px){
+    html{
+        font-size: 55%;
+    }
+
+
+#hamburger-menu{
+    display: inline-block;
+}
+.navbar .navbar-logo img{
+    height: auto;
+    width: 110px;
+    
+}
+
+.navbar .teks{
+    padding-right: 16rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+.navbar .navbar-nav{
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    background-color: var(--bg);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+    border-top: 1px solid #8686861f;
+    border-left: 1px solid #8686861f;
+    border-top-left-radius: 10px;
+}
+
+
+
+.navbar .navbar-nav a{
+    color: #000000;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+}
+
+.navbar .navbar-nav.active{
+    right: 0;
+}
+
+.navbar .navbar-nav a::after{
+    transform-origin: 0 0;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.3);
+}
+
+.header{
+    margin-top:7.4rem;
+}
+
+.footer-logo img {
+    filter: grayscale(100%);
+}
+
+
+
+.box1, .box2, .box3, .box4, .box5{
+    width: 120px;
+    height: 150px;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img {
+    width: 69px;
+    height: 69px;
+}
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p {
+    font-size: 8px;
+    
+}
+
+
+
+/*Footer*/
+    .footer{
+        background-color: var(--primary);
+        color: var(--bg);
+        padding-top: 15px;
+        padding-bottom: 2px;
+        text-align:center;
+    }
+
+    .footer .alamat {
+        text-align: center;
+    }
+
+}
+
+
+    
+
+
+
+  
+
+.box1, .box2, .box3, .box4, .box5 {
+    
+    transition: all 0.3s ease; /* Animasi untuk semua properti dengan durasi 0.3 detik */
+}
+
+/* Efek saat kursor diarahkan ke box */
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Efek bayangan saat hover */
+    transform: scale(1.05); /* Sedikit perbesar box saat hover */
+}
+
+    
+    

@@ -1,0 +1,515 @@
+:root{
+    --primary: #7095F4;
+    --bg: #fff;
+    --f: #333;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+body{
+        
+   background-color: #fff;
+    
+}
+
+
+
+
+/* Navbar */
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2%;
+    background-color: #ffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 520px;
+    z-index: 9999;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.navbar .teks{
+    padding-right: 24rem;
+    
+}
+
+
+
+.navbar .navbar-nav a{
+    color: #000000;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+.navbar .navbar-extra a{
+    color: #070707;
+    margin: 0 0.5rem;
+
+}
+
+.navbar .navbar-extra a:hover{
+    color: var(--primary);
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+.header{
+    margin-top: 5.2rem;
+    background-color: var(--primary);
+}
+header h1{
+    text-align: center;
+    color: var(--bg);
+    font-size: 1.5rem;
+}
+
+
+
+
+
+/*Footer*/
+.footer{
+    background-color: var(--primary);
+    color: var(--bg);
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align:center;
+    box-shadow: 0 0 0 1px #333;
+    
+    
+}
+.footer-logo img {
+    height: 35px;
+    width: auto;
+    filter: grayscale(100%); /* Mengubah gambar menjadi abu-abu sepenuhnya */
+}
+
+.footer .footer-info{
+    text-align: center;
+}
+
+.footer .alamat{
+    text-align: center;
+}
+
+/*Sosial Media didalam footer */
+
+    
+    .footer .icon{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .icon a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .icon a:hover{
+    color: var(--bg);
+    }
+    
+    .footer .icon ul{
+    width:100%;
+    }
+    
+    .footer .icon ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .icon a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+
+/*box untuk kelas informasi1 sampai maklumat*/
+    
+
+.informasi1, .informasi2, .informasi3, .informasi4, .maklumat {
+    background-color: #f5f5f5; /* Warna latar belakang */
+    padding: 20px; /* Jarak antara konten dengan tepi box */
+    margin-bottom: 20px; /* Jarak antara box dengan elemen setelahnya */
+    width: 80%; /* Lebar box */
+    margin: 0 auto; /* Mengatur box ke tengah */
+    border-radius: 10px; /* Sudut border box */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2); /* Efek bayangan pada box */
+}
+
+   
+
+/*Media Queries*/
+
+
+/*Dekstop*/
+@media(max-width: 1444px){
+    html{
+        font-size: 90%;
+    }
+    
+    
+    .tulisan1{
+        text-align: center;
+        margin-top: 15rem;
+
+    }
+    .header{
+        margin-top: 5.2rem;
+    }
+   
+    .footer-logo img {
+        filter: grayscale(100%);
+        
+    }
+
+    .alamat p{
+        text-align: center;
+        margin-right: 1rem;  
+    }
+    .tentang-kami {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*height: 100vh;*/ /* Sesuaikan tinggi gambar dengan kebutuhan Anda */
+    }
+    
+    .tentang-kami img {
+        max-width: 100%;
+        height: 6rem; 
+        width: auto;
+    }
+    .tentang-kami .teks-blk{
+        font-size: 14px;
+    }
+    .informasi1{
+        margin-top: 5rem;
+        
+        text-align: justify;
+    }
+
+    .informasi2{
+        margin-top: 2rem;
+       
+        text-align: justify;
+    }
+
+    .informasi3{
+        margin-top: 2rem;
+       
+        text-align: justify;
+    }
+
+    .informasi4{
+        margin-top: 2rem;
+       
+        text-align: justify;
+    }
+    .informasi4 p{
+        margin-bottom: 1rem;
+    }
+    
+    .maklumat{
+        margin-top: 5rem;
+        margin-bottom: 20rem;
+       
+
+    }
+
+}
+
+/*Tablet*/
+@media(max-width: 991px){
+    html{
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu{
+        display: inline-block;
+    }
+    .navbar .teks{
+        padding-right: 31rem;
+        font-size: 140%;
+    }
+   
+    
+    
+    
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 110%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 20rem;
+        height: 100vh;
+        transition: 0.3s;
+        border-top: 1px solid #8686861f;
+        border-left: 1px solid #8686861f;
+    }
+
+   
+
+    .navbar .navbar-nav a{
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
+    .header{
+        margin-top: 6.5em;
+    }
+
+    .footer-logo img {
+        filter: grayscale(100%);
+        
+    }
+    
+
+
+    /*mengatur ukuran font*/
+    .informasi1 h2 {
+        font-size: 18px;
+    }
+    .informasi1 p{
+        font-size: 13px;
+    }
+
+    .informasi2 h2 {
+        font-size: 18px;
+    }
+    .informasi2 p{
+        font-size: 13px;
+    }
+
+    .informasi3 h2 {
+        font-size: 18px;
+    }
+    .informasi3 p{
+        font-size: 13px;
+    }
+
+    .informasi4 h2 {
+        font-size: 18px;
+    }
+    .informasi4 p{
+        font-size: 13px;
+    }
+
+    .maklumat h1{
+        font-size: 18px;
+    }
+    .maklumat p{
+        padding-top: 5px;
+        font-size: 13px;
+    }
+
+   
+    
+}
+
+
+
+/*Mobile Phone*/
+@media(max-width: 760px){
+    html{
+        font-size: 55%;
+    }
+
+
+#hamburger-menu{
+    display: inline-block;
+}
+.navbar .navbar-logo img{
+    height: auto;
+    width: 110px;
+    
+}
+
+.navbar .teks{
+    padding-right: 16rem;
+    font-size: 1.3rem;
+}
+
+
+
+
+.navbar .navbar-nav{
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    background-color: var(--bg);
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+    border-top: 1px solid #8686861f;
+    border-left: 1px solid #8686861f;
+    border-top-left-radius: 10px;
+}
+
+
+
+    .navbar .navbar-nav a{
+        color: #000000;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
+    .header{
+        margin-top:7.4rem;
+    }
+
+    .footer-logo img {
+        filter: grayscale(100%);
+    }
+}
+
+
+
+    
+
+
+
+
+
+/*Footer*/
+.footer{
+    background-color: var(--primary);
+    color: var(--bg);
+    padding-top: 15px;
+    padding-bottom: 2px;
+    text-align:center;
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+  
+/* Animasi masuk dari samping */
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  
+}
+
+  /* Animasi teks pertama */
+    .informasi1{
+    animation: slideIn 2s forwards; /* Mengatur durasi animasi dan mode forwards untuk mempertahankan posisi akhir animasi */
+    }
+   
+  
+  /* Animasi teks kedua */
+    .informasi2{
+        animation: slideIn 2.5s forwards; /* Mengatur durasi animasi dan mode forwards untuk mempertahankan posisi akhir animasi */
+    }
+  
+  /* Animasi teks ketiga */
+    .informasi3{
+        animation: slideIn 3s forwards; /* Mengatur durasi animasi dan mode forwards untuk mempertahankan posisi akhir animasi */
+    }
+
+    /* Animasi teks keempat */
+    .informasi4{
+        animation: slideIn 3s forwards; /* Mengatur durasi animasi dan mode forwards untuk mempertahankan posisi akhir animasi */
+    }
+
+    /* Animasi teks kelima */
+    .maklumat{
+        animation: slideIn 3.5s forwards;
+    }
+
+
+
+    .informasi1, .informasi2, .informasi3, .informasi4, .maklumat {
+    
+        transition: all 0.3s ease; /* Animasi untuk semua properti dengan durasi 0.3 detik */
+    }
+    
+    /* Efek saat kursor diarahkan ke box */
+    .informasi1:hover, .informasi2:hover, .informasi3:hover, .informasi4:hover, .maklumat:hover {
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Efek bayangan saat hover */
+        transform: scale(1.05); /* Sedikit perbesar box saat hover */
+    }
+

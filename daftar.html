@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLK Kal-Sel</title>
+
+    <!--mengkoneksikan ke css-->
+    <link rel="stylesheet" href="css/daftar.css"/>
+
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+
+
+    <!--icon sosmed-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--batas icon sosmed-->
+
+
+    <!--feather Icons-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+    
+    <!--navbar start-->
+    <nav class="navbar">
+    <a href="#" class="navbar-logo"><img src="gambar/blk.png" width="150rem" height="60" alt="logo"></a>
+    <div class="teks">
+        <h5>BALAI LATIHAN KERJA</h5>
+        <h5>BANJARMASIN DINAS TENAGA KERJA</h5>
+        <h5>PROVINSI KALIMANTAN SELATAN</h5>
+    </div>
+
+    <div class="navbar-nav">
+        <a href="index.html">BERANDA</a>
+        <a href="tk.html">TENTANG KAMI</a>
+        <a href="kejuruan.html">KEJURUAN</a>
+        <a href="daftar.html">DAFTAR</a>
+    </div>
+
+    <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+    </div>
+    </nav>
+    <!--Navbar end-->
+
+     <!--Header start-->
+     <header class="header">
+            <h1>AYO MELATIH DIRI KALIAN </h1>
+            <h1>BUAT MASA DEPAN</h1>
+     </header>
+    <!--Header end-->
+
+
+    <!--Formulir-->
+    <div class="form-container">
+        <h2>Formulir Pelatihan</h2>
+        <form id="pelatihanForm">
+            <div class="form-group">
+                <label for="pelatihan">Pilihan Pelatihan</label>
+                <select id="pelatihan" name="pelatihan">
+                    <option value="kosong"></option>
+                    <option value="pelatihan1">Pembuatan Roti & Kue</option>
+                    <option value="pelatihan2">Menjahit Pakaian</option>
+                    <option value="pelatihan3">Servis Sepeda Motor Injeksi</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nik">NIK</label>
+                <input type="text" id="nik" name="nik">
+            </div>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-group">
+                <label for="tempatLahir">Tempat Lahir</label>
+                <input type="text" id="tempatLahir" name="tempatLahir">
+            </div>
+            <div class="form-group">
+                <label for="tanggalLahir">Tanggal Lahir</label>
+                <div class="calendar-container">
+                    <input type="date" id="tanggalLahir" name="tanggalLahir">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-laki">
+                    <label for="lakiLaki">Laki-laki </label>
+                    <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan </label>
+                    
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat">
+            </div>
+            <div class="form-group">
+                <label for="kecamatan">Kecamatan</label>
+                <input type="text" id="kecamatan" name="kecamatan">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="telepon">Telepon/HP</label>
+                <input type="text" id="telepon" name="telepon">
+            </div>
+            <div class="form-group">
+                <label for="pendidikan">Pendidikan Terakhir</label>
+                <select id="pendidikan" name="pendidikan">
+                    <option value="kosong"></option>
+                    <option value="SD">SD/Sederajat</option>
+                    <option value="SMP">SMP/Sederajat</option>
+                    <option value="SMA">SMA/SLTA Sederajat</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D2</option>
+                    <option value="D3">D3</option>
+                    <option value="D4">DIPLOMA IV</option>
+                    <option value="S1">S1</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sumberInformasi">Sumber Informasi Mengenai Pelatihan</label>
+                <input type="text" id="sumberInformasi" name="sumberInformasi">
+            </div>
+            <div class="tombol-kirim">
+                <button type="submit">Daftar</button>
+            </div>
+        </form>
+    </div>
+    <div class="result-message" id="resultMessage"></div>
+    <!--Batas Formulir-->
+    
+   <!--Untuk Menampilkan SweetAlert melalui CDN (Content Delivery Network) atau mengunduhnya dan menyertakan file script secara lokal -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+   <!--Batas kode tampilannya-->
+
+    
+    <!--Feather Icons-->
+    <script>
+        feather.replace();
+    </script>
+
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <!--end my-->
+</body>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-logo">
+            <img src="gambar/blk.png" width="150rem" height="60" alt="logo">
+        </div>
+       
+    </div>
+    <div class="footer-info">
+        <h5>BALAI LATIHAN KERJA</h5>
+        <h5>BANJARMASIN DINAS TENAGA KERJA</h5>
+        <h5>PROVINSI KALIMANTAN SELATAN</h5>
+    </div>
+    <div class="alamat">
+        <p>Alamat: Jl. A Yani  KM 4,5
+            Banjarmasin 40971 - Indonesia</p>
+        <p>No. Telepon: +62-22 5891445</p>
+        <p>No. WhatsApp:  08112406969</p>
+    </div>
+    
+    <!--Icon Sosial Media-->
+    <div class="icon">
+        <a href="https://web.facebook.com/blkbanjarmasin/?_rdc=1&_rdr"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/blkbanjarmasin/"><i class="fa fa-instagram"></i></a>
+    </div>
+    <!--Batas icon sosmed-->
+    
+</footer>
+<!-- Batas Footer -->
+
+
+</html>
